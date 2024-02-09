@@ -1,0 +1,69 @@
+.toggleclass{
+    display: contents;
+}
+.labelclass{
+    margin-right: 0.8%;
+    font-weight:500;
+    color:#3994CC
+}
+.custom-toggle-switch-container {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 20px; /* Adjust border radius for rounded corners */
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .custom-toggle-switch-container.off .circle {
+    transform: translateX(0);
+  }
+  
+  .custom-toggle-switch-container.on .circle {
+    transform: translateX(120%);
+  }
+
+  .custom-toggle-switch-container.on{
+    background-color: #0F71AE;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-color: white; /* Adjust color for "ON" state */
+    border-radius: 50%; /* Make it a circle */
+    transition: transform 0.3s ease;
+  }
+  
+  .text-left {
+    position: absolute;
+    top: 50%;
+    left: 18px; /* Adjust left position for "ON" text */
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust color for "ON" text */
+    font-size: 14px; /* Adjust font size as needed */
+  }
+  
+  .text-right {
+    position: absolute;
+    top: 50%;
+    right: 17px; /* Adjust right position for "OFF" text */
+    transform: translate(50%, -50%);
+    color: #555; /* Adjust color for "OFF" text */
+    font-size: 14px; /* Adjust font size as needed */
+  }
+  
+  
+  .custom-toggle-switch-container.off .text-left {
+    opacity: 0; /* Hide "ON" text in "OFF" state */
+  }
+  
+  .custom-toggle-switch-container.on .text-right {
+    opacity: 0; /* Hide "OFF" text in "ON" state */
+  }
+  

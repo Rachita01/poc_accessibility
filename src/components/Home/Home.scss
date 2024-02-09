@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'OpenSansLight';
+  src: url('../../assets/fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../../assets/fonts/OpenSans-Bold.ttf');
+}
+
+  .text1{
+    font-size: 48px;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0px;
+    font-family: 'OpenSansLight';
+  }
+
+  .text2{
+    font-size: 48px;
+    font-weight: 400;
+    font-style: bold;
+    margin: 0px;
+    font-family: 'OpenSansBold';
+  }
+
+  .homeStyle{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+  }
+
+  .cardStyle{
+    display:flex;
+    flex-direction: row;
+    background-image: url('../../assets/images/Home_Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    width:100%
+  };
+
+  .textContainerStyle{
+    margin-top: 60%;
+    margin-left: 10%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    color: #fff;
+  }
+
+  .enterButton{
+    position: absolute;
+    left:35%;
+    bottom:13.5%;
+  }
+
+  @media screen and (min-width:721px) {
+    .cardStyle{
+      min-height: 0vh;
+      width:40%;
+      position: relative;
+      margin-left: 30%;
+    }
+
+    .enterButton{
+      position: absolute;
+      left:30%;
+      bottom: 5%;
+    }
+
+    .textContainerStyle{
+      margin-left: 10%;
+      margin-bottom: 20%;
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: flex-start;
+      color: #fff;
+    }
+
+      }
+
+      .headercontainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 42vh;
+      }
+    .headerimage{
+      display: flex;
+      position:relative;
+      flex-direction:row;
+      flex-grow: 0.5;
+      background-image: url('../../assets/images/Banner_1x.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position:top;
+    }
+
+    .homeStyle {
+      height:100vh;
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+      .splogo {
+          display: flex;
+          position: absolute;
+          background-image: url('../../assets/images/SP_Logo_1x.png');
+          background-repeat: no-repeat;
+          background-size: 14%;
+          background-position: top;
+          background-position-x: 99%;
+          width: 100%;
+          height: 15%;
+          margin-top: 3.5%;
+          }
+        
+      .tabClass{
+        position:absolute;
+        margin-top: 15.6%;
+        width:100%;
+      }
+
+      @media only screen and (min-device-width:500px) and (max-device-width:1024px){
+        .headerimage{
+        flex-grow: 0.2;
+        }
+
+        .tabClass{
+          margin-top: 13.3%;
+        }
+      }
+
+      @media screen and (max-width:500px) and (max-device-height:1024px){
+        .headerimage{
+          flex-grow: 0.12;
+        }
+        .tabClass{
+          margin-top: 8%;
+        }
+      }

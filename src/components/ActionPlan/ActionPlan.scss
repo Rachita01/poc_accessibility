@@ -1,0 +1,72 @@
+.ActionClass{
+    margin-left: 3%;
+    width:94%;
+    margin-top: -2%;
+}
+
+.HeadingClass{
+    color:#1BA19E;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 0.5%;
+}
+
+.ContentClass{
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.secondHeading{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1.5px solid rgb(219, 211, 211);
+}
+
+.secondHeadingClass{
+    color:#3994CC;
+    font-weight: 700;
+    font-size: 23px;
+    margin: 1%;
+}
+
+.EditLessClass {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    font-size: 14px;
+}
+.EditClass,.LessClass{
+  display: contents;
+}
+
+.editImg{
+    background: url('../../assets/images/Edit.png');
+    height: 25px;
+    width: 25px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.lessImg{
+    background: url('../../assets/images/Up.png');
+    height: 25px;
+    width: 25px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.tableclass{
+    border-collapse: collapse;
+    width:100%;
+}
+
+tr.trclass td{
+    border-bottom: 1px solid rgb(211, 204, 204);
+    padding: 20px;
+}
