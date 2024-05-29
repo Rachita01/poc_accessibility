@@ -19,11 +19,12 @@ function ActionPlan() {
         fetchData();
       }, []);
 
-      for (let i = 0; i < data.length; i+=2) {
+      for (let i = 0; i < data.length; i+=3) {
         rows.push(
           <tr key={i} className='trclass'>
             <td>{data[i].name}</td>
             {data[i+1] && <td>{data[i+1].name}</td>}
+            {data[i+2] && <td>{data[i+2].name}</td>}
           </tr>
         );
       }
